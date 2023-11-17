@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<Module>
+	
+	<GlobalSolutionName>ThirdParty</GlobalSolutionName>
+	<GlobalNamespace>potato</GlobalNamespace>
+
+	<StaticLibrary>
+		<Name>thirdparty_maligles</Name>
+		<SourceRoot>.</SourceRoot>
+		<ThirdParty>true</ThirdParty>
+		<ExportedIncludeDirectory>include</ExportedIncludeDirectory>
+		
+		<Frozen>true</Frozen>
+		<FilterPlatform include="windows">
+			<FrozenDeployFiles>
+				bin\libEGL.dll
+				bin\libGLESv2.dll
+				bin\libMaliEmulator.dll
+				bin\log4cplus.dll
+				bin\mali-checker.dll
+				bin\openglessl\Mali-T600_r7p0-00rel0.dll
+			</FrozenDeployFiles>
+
+			<FrozenLibraryFiles>
+				lib\libEGL.lib
+				lib\libGLESv2.lib
+				lib\libMaliEmulator.lib
+			</FrozenLibraryFiles>
+		</FilterPlatform>
+
+	</StaticLibrary>
+
+</Module>
